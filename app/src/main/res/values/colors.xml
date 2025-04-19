@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#EDAFB8</color> <!--  Soft Pink -->
+    <color name="colorSecondary">#F7E1D7</color> <!-- Pinky Beige -->
+    <color name="colorBackground">#DEDBD2</color> <!-- Light Beige -->
+    <color name="colorAccent">#B0C4B1</color> <!-- Pastel Green -->
+    <color name="colorDarkText">#7f5539</color> <!-- Gray for text -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+</resources>

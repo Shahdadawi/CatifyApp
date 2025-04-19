@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductActivity"
+    android:padding="16dp"
+    android:background="@color/cardview_light_background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp"
+        android:fillViewport="true"
+        android:overScrollMode="ifContentScrolls">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtProductName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/product_name"
+                style="@style/TitleText"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="50dp"
+                android:layout_marginTop="50dp"/>
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher_background"
+                android:layout_marginBottom="30dp" />
+
+            <!-- السعر -->
+            <TextView
+                android:id="@+id/txtItemPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_9_99"
+                style="@style/BodyText"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="sans-serif-black"
+                />
+
+            <!-- الوصف -->
+            <TextView
+                android:id="@+id/txtDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/product_description"
+                style="@style/BodyText"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="sans-serif-black"/>
+
+            <!-- الكاتيجوري -->
+            <TextView
+                android:id="@+id/txtCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/category_food"
+                style="@style/BodyText"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="sans-serif-black"/>
+
+            <!-- الساب كاتيجوري -->
+            <TextView
+                android:id="@+id/txtSubCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/subcategory_wetfood"
+                style="@style/BodyText"
+                android:layout_marginBottom="50dp"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="sans-serif-black"/>
+
+            <!-- الأزرار -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="16dp">
+
+                <Button
+                    android:id="@+id/btnAddToCard"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_to_cart"
+                    style="@style/PrimaryButton"
+                    android:layout_marginEnd="8dp" />
+
+                <Button
+                    android:id="@+id/btnAddToWishlist"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_to_wishlist"
+                    style="@style/PrimaryButton"
+                    android:layout_marginStart="8dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- زر الرجوع لورا -->
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
