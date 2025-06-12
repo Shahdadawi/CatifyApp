@@ -51,7 +51,7 @@ Catify is a mobile Android application developed using **Java** and **XML**. The
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/catify.git
+   git clone https://github.com/Shahdadawi/CatifyApp.git
    ```
 
 2. Open in **Android Studio** and sync Gradle.  
